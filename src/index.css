@@ -1,0 +1,552 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------- Globals ------------ */
+
+.inputFields {
+    @apply w-full py-2 border-b-2 outline-0;
+}
+
+.labels {
+    @apply text-darkBlue font-semibold;
+}
+
+.tablesTitle {
+    @apply  flex gap-4 mt-4 sm:mt-0;
+}
+
+.tablesTitle h3 {
+    @apply  text-darkBlue font-bold py-2 uppercase;
+}
+
+.tableHead {
+    @apply shadow-lg shadow-darkGray py-2 md:py-4 px-4;
+}
+
+.tableBody {
+    @apply  font-semibold;
+}
+
+.tHeadTr {
+    @apply  text-left rounded-t-lg bg-darkBlue font-bold
+    text-offWhite py-2 px-4 lg:py-4 lg:px-2;
+}
+
+.tBodyTr {
+    @apply py-0.5 px-0.5 lg:py-4 lg:px-2 border-b;
+}
+
+.tHeadTh {
+    @apply text-sm md:text-base px-4 py-2 md:py-4 md:px-2;
+}
+
+.tHeadTd {
+    @apply text-base md:text-lg py-4 px-2;
+}
+
+.tHeadTdAction {
+    @apply text-center px-4 py-4;
+}
+
+.tBodyTdAction {
+    @apply flex justify-center items-center gap-4 px-4 py-4;
+}
+
+.tableBtnRed {
+    @apply bg-red px-2 py-1 rounded-md text-offWhite font-bold;
+}
+
+.tableBtnGreen {
+    @apply bg-green px-2 py-1 rounded-md text-offWhite font-bold;
+}
+
+.tableBtnDisabled {
+    @apply bg-offWhite px-2 py-1 rounded-md text-darkGray font-bold;
+}
+
+.userTableBtnLight {
+    @apply bg-lightBlue px-2 py-1 rounded-md text-darkGray font-bold;
+}
+
+.userTableBtnDark {
+    @apply bg-darkBlue px-2 py-1 rounded-md text-offWhite font-bold;
+}
+
+.infoBtn {
+    @apply bg-darkBlue py-0.5 px-2 rounded-md font-bold cursor-pointer text-offWhite;
+}
+
+.tableErrorMessage {
+    @apply w-full text-red font-bold text-xl py-6 text-center;
+}
+
+.errorsMessage {
+    @apply text-red font-bold;
+}
+
+.successMessage {
+    @apply text-green text-center py-4 font-bold;
+}
+
+.successPromote {
+    @apply text-green font-bold text-center py-4;
+}
+
+.formBtn {
+    @apply w-full uppercase px-4 py-2 bg-darkBlue text-offWhite font-bold;
+}
+
+.pageLink {
+    @apply text-darkBlue font-bold cursor-pointer;
+}
+
+.formGroup {
+    @apply flex flex-col gap-4;
+}
+
+.formTitle {
+    @apply  text-darkGray text-lg uppercase font-bold;
+}
+
+.formParegraph {
+    @apply text-darkGray text-sm font-semibold;
+}
+
+.paginationAndTitle {
+    @apply flex justify-between gap-2 sm:flex-row py-4 text-sm md:text-lg;
+}
+
+.pagination {
+    @apply flex items-center gap-2;
+}
+
+/* ----------- End Globals ------------ */
+
+/* ----------- SignIn ------------ */
+
+.signInSection {
+    @apply  flex flex-col h-screen justify-center items-center md:flex-row gap-8;
+}
+
+/* ----------- End SignIn ------------ */
+
+/* ----------- SignUp ------------ */
+
+.signUpSection {
+    @apply  flex flex-col my-8 h-screen justify-center items-center md:flex-row gap-8;
+}
+
+/* ----------- End SignUp ------------ */
+
+/* ----------- NoPage ------------ */
+.NoPageFound {
+    @apply flex justify-center items-center h-screen;
+}
+
+.NoPageFound .Title {
+    @apply text-red font-bold text-xl;
+}
+/* ----------- End NoPage ------------ */
+
+/* ----------- Sidebar ------------ */
+
+.sidebarSection {
+    @apply fixed inset-y-0 flex-col items-center block bg-darkBlue w-72
+    h-[97%] p-0 my-4 duration-200;
+}
+
+.sidebarSectionClose {
+    @apply  bg-darkBlue border-0 shadow-xl max-w-[64] z-50 md:ml-6 rounded-2xl
+    xl:left-0 md:translate-x-0;
+}
+
+.sidebarSection .sideBookingTitleDiv {
+    @apply h-20 py-8;
+}
+
+.sidebarSection .sideBookingTitleDiv .sideBookingLink {
+    @apply px-8 m-0 text-sm text-offWhite;
+}
+
+.sidebarSection .sideBookingTitleDiv .sideBookingLink .sideBookingSpan {
+    @apply ml-1 transition-all text-2xl font-bold duration-200;
+}
+
+.sidebarSection .sideHr {
+    @apply text-offWhite mt-4;
+}
+
+.sidebarSection .sideSection {
+    @apply flex flex-col gap-6 justify-between h-[90%] pb-4 md:pb-0;
+}
+
+.sidebarSection .sideSection .sideParent {
+    @apply flex flex-col gap-6 pt-6 pb-10;
+}
+
+.sidebarSection .sideSection .sideParent .sideDashLi {
+    @apply mt-0.5 py-2 w-full hover:ml-4 hover:border-l-4 hover:border-l-lightBlue;
+}
+
+.sidebarSection .sideSection .sideParent .sideDashLiForBtn {
+    @apply mt-0.5 py-2 w-full hover:ml-4;
+}
+
+.sidebarSection .sideSection .sideParent .sideDashLi .sideDashLink {
+    @apply py-2 text-sm my-0 mx-2 flex items-center rounded-lg px-4 font-bold
+    text-offWhite;
+}
+
+.sidebarSection .sideSection .sideParent .sideDashLi .sideDashLink .sideImgDiv {
+    @apply mr-2 flex items-center justify-center rounded-lg bg-center stroke-0
+    text-center;
+}
+
+.sidebarSection .sideSection .sideParent .sideDashLi .sideDashLink .sideTitleSpan {
+    @apply text-lg duration-300 opacity-100 pointer-events-none ease-in;
+}
+
+.sidebarSection .sideSection .sideParent .sideDashLiForBtn .sideBtn {
+    @apply py-2 text-sm mx-2 flex items-center pl-4 font-bold text-offWhite 
+    hover:border-l-4 hover:border-l-red hover:ml-4;
+}
+
+.sidebarSection .sideSection .sideParent .sideDashLiForBtn .sideBtn .sideImgDiv {
+    @apply flex items-center justify-center rounded-lg bg-center stroke-0 text-center;
+}
+
+.sidebarSection .sideSection .sideParent .sideDashLiForBtn .sideBtn .sideTitleSpan {
+    @apply text-lg duration-300 pl-2 opacity-100 pointer-events-none ease-in;
+}
+
+.sidebarSection .sideSection .sideParent .sideDashLiForBtn .sideDeleteMessage {
+    @apply text-left p-2 pl-8 text-red;
+}
+
+/* ----------- End Sidebar ------------ */
+
+/* ----------- Header ------------ */
+
+.headerNavSection {
+    @apply fixed w-screen sm:w-full bg-white top-0 left-0 md:relative flex flex-wrap items-center justify-between py-2 ml-2
+    transition-all ease-in z-50 shadow-none duration-200 rounded-2xl ;
+}
+
+.headerNavMainDiv {
+    @apply flex items-center z-50 justify-between w-full py-1 md:left-0;
+}
+
+/* Left */
+.leftNavSection .leftList {
+    @apply flex flex-wrap pt-1 mr-12 rounded-lg text-sm md:text-base;
+}
+
+.leftNavSection .leftListLiPageTitle {
+    @apply mb-0 font-bold text-darkGray uppercase text-xs md:text-base;
+}
+
+.leftNavSection .leftList .leftListLi {
+    @apply text-sm leading-normal;
+}
+
+.leftNavSection .leftList .leftListLi a {
+    @apply text-darkGray opacity-50;
+}
+
+.leftNavSection .leftList .leftListLiTitle {
+    @apply text-sm pl-2 uppercase leading-normal text-darkGray before:float-left
+    before:pr-2 before:text-darkGray before:content-['/'];
+}
+
+/* Right */
+.headerNavSection .rightNavSection {
+    @apply flex justify-between items-center mt-2 sm:mt-0 md:mr-0;
+}
+
+.headerNavSection .rightNavSection ul {
+    @apply flex flex-row justify-end pl-0 mb-0 list-none;
+}
+
+.headerNavSection .rightNavSection ul .userLi {
+    @apply hidden md:flex items-center bg-offWhite rounded-full pr-4 py-0.5;
+}
+
+.headerNavSection .rightNavSection ul .userLi .UserProfileLink {
+    @apply flex items-center gap-2 text-sm text-darkGray font-bold md:text-xl uppercase transition-all;
+}
+
+.headerNavSection .rightNavSection ul .userLi .UserProfileLink .UserProfileLinkImg {
+    @apply flex items-center bg-darkBlue rounded-full w-8 h-8;
+}
+
+.headerNavSection .rightNavSection ul .userLi .UserProfileLink img {
+    @apply w-8 h-5;
+}
+
+/* Notification dropdown */
+.headerNavSection .rightNavSection .notificationLi{
+    @apply relative flex items-center;
+}
+
+.headerNavSection .rightNavSection .notificationParagraph {
+    @apply hidden;
+}
+
+.headerNavSection .rightNavSection .notificationLink {
+    @apply  block p-0 text-sm text-darkGray transition-all;
+}
+
+.headerNavSection .rightNavSection .notificationLink .notificationSpan {
+    @apply absolute top-0 right-0 bg-red text-white text-xs font-bold rounded-full px-2 py-1;
+}
+
+.headerNavSection .rightNavSection .notificationDropDownMenu {
+    @apply text-sm before:duration-300 lg:shadow-xl duration-200 before:sm:right-8
+    pointer-events-none absolute right-0 top-10 w-80 z-50 origin-top list-none rounded-lg
+    border-0 bg-darkGray px-2 py-4 text-left text-offWhite transition-all;
+}
+
+.headerNavSection .rightNavSection .notificationDropDownMenu .NotificationMessageLink {
+    @apply py-1 clear-both block w-72 px-4 duration-300;
+}
+
+.headerNavSection .rightNavSection .notificationDropDownMenu .NotificationMessageH6 {
+    @apply mb-1 text-sm font-bold leading-normal;
+}
+/* ----------- End Header ------------ */
+
+/* ----------- Dashboard Main ------------ */
+.dashMain {
+    @apply relative h-full max-h-screen transition-all duration-200
+    ease-in-out md:ml-80 rounded-xl;
+}
+
+/* ----------- End Dashboard Main ------------ */
+
+/* ----------- Admin Dashboard ------------ */
+
+.adminDashboardSection .dashOverViewParent {
+    @apply grid grid-rows-1 grid-cols-1 md:grid-rows-2 md:grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-6 py-8 mt-16 md:mt-0;
+}
+
+.adminDashboardSection .dashOverViewParent img {
+    @apply w-8 h-8;
+}
+
+.adminDashboardSection .dashOverViewParent span {
+    @apply font-bold text-green;
+}
+
+.adminDashboardSection .dashOverViewParent .dashOverViewChild {
+    @apply flex justify-center items-center gap-2 bg-offWhite w-full h-24 rounded-md shadow-lg shadow-darkGray;
+}
+
+.adminDashboardSection .dashOverViewParent .dashOverViewChild .dashOverViewParegraph {
+    @apply text-base text-darkGray font-bold uppercase;
+}
+
+.adminDashboardSection .createOfficesSection {
+    @apply flex flex-col gap-8 lg:flex-row justify-between;
+}
+
+.adminDashboardSection .createOfficesSection .mainDiv{
+    @apply w-full lg:w-1/2 py-4;
+}
+
+/* ----------- End Admin Dashboard ------------ */
+
+/* ----------- Profile ------------ */
+
+.ProfileInfoSection {
+    @apply relative h-full transition-all duration-200 ease-in-out mt-32 mb-28 px-8 rounded-xl;
+}
+
+.ProfileInfoSection .profileInfoHeader {
+    @apply w-full;
+}
+
+.ProfileInfoSection .profileInfoHeader .personalTitle {
+    @apply uppercase text-offWhite font-bold text-start pl-10;
+}
+
+.ProfileInfoSection .profileInfoHeader .userProfileImg {
+    @apply relative -top-40 left-8 w-16 h-16 bg-darkBlue border-2 border-offWhite rounded-full;
+}
+
+.ProfileInfoSection .ProfileInfoSectionMainDiv {
+    @apply flex flex-col lg:flex-row justify-center items-center gap-8 p-2 sm:p-0 min-h-screen w-full;
+}
+
+.ProfileInfoSection .ProfileInfoSectionMainDiv .personalInfo {
+    @apply w-full h-[460px] lg:w-1/2 flex flex-col justify-center items-center gap-6 bg-darkBlue
+    text-offWhite rounded-lg font-bold mt-4;
+}
+/* ----------- End Profile ------------ */
+
+/* ----------- Booking ------------ */
+
+.bookingSection {
+    @apply relative w-full lg:h-full transition-all duration-200 ease-in-out rounded-xl;
+}
+
+.bookingSection .bookingDeskViewAndColorParentDiv {
+    @apply flex flex-col lg:flex-row justify-between items-start lg:items-center mt-4 text-xs sm:text-base md:text-lg lg:text-2xl;
+}
+
+.bookingSection .bookingDeskViewAndColorParentDiv .deskColor {
+    @apply  flex flex-col lg:flex-row gap-2 md:gap-4 mb-8 md:mb-0;
+}
+
+.bookingSection .bookingDeskViewAndColorParentDiv .desksTitle {
+    @apply text-darkBlue py-8 font-bold text-xs sm:text-base md:text-lg lg:text-2xl;
+}
+
+.bookingSection .bookingDeskViewAndColorParentDiv .deskSpan {
+    @apply text-sm text-darkBlue uppercase font-bold lg:text-xl sm:text-base md:text-lg;
+}
+
+.bookingSection .bookingDeskViewAndColorParentDiv .deskSpan .fixRed {
+    @apply bg-red rounded-md py-0.5 px-4 text-xs sm:text-base md:text-lg lg:text-2xl;
+}
+
+.bookingSection .bookingDeskViewAndColorParentDiv .deskSpan .flexGreen {
+    @apply bg-green rounded-md py-0.5 px-4 text-xs sm:text-base md:text-lg lg:text-2xl;
+}
+
+.bookingSection .desks .desksGrid {
+    @apply text-sm w-full grid justify-items-center items-center grid-cols-1
+    sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 py-4 gap-3 mr-2;
+}
+
+.bookingSection .desks .desksGrid .gridCard {
+    @apply w-full p-2 content-center text-center rounded-md;
+}
+
+.bookingSection .desks .desksGrid .gridCard .deskType {
+    @apply h-10 overflow-hidden text-darkBlue font-bold pb-2;
+}
+
+.bookingSection .desks .desksGrid .gridCard .cardInfo {
+    @apply h-full flex gap-6 justify-between items-end;
+}
+
+.bookingSection .desks .desksGrid .gridCard .cardInfo .infoBtn {
+    @apply bg-darkBlue py-0.5 px-2 rounded-md font-bold cursor-pointer text-offWhite;
+}
+
+.bookingSection .desks .desksGrid .gridCard .cardInfo .infoImg {
+    @apply w-6 h-6 cursor-pointer;
+}
+
+.bookingSection .desks .desksErrorMessage {
+    @apply flex justify-center items-center text-red font-bold;
+}
+
+/* Offices */
+
+.officesSection {
+    @apply mt-16 md:mt-0;
+}
+
+.officesSection .offices {
+    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 py-4 gap-2 mt-20 md:mt-0;
+}
+
+.officesSection .offices .officesBtn {
+    @apply w-full flex justify-start overflow-hidden items-center gap-6 uppercase rounded-lg p-6 font-bold bg-darkBlue focus:bg-lightBlue focus:text-darkBlue text-white;
+}
+
+.officesSection .offices .officeImg {
+    @apply  w-8 h-8 bg-lightBlue focus:bg-darkBlue rounded-full;
+}
+
+/* ----------- End Booking ------------ */
+
+/* ----------- Desk View ------------ */
+
+.deskViewSection {
+    @apply relative h-full transition-all duration-200 ease-in-out rounded-xl;
+}
+
+.deskViewSection .deskParent {
+    @apply flex flex-col-reverse mt-10 lg:flex-row justify-center gap-6;
+}
+
+.deskViewSection .deskParent .deskImgDiv {
+    @apply w-full md:h-1/2 flex flex-col-reverse lg:flex-col gap-4;
+}
+
+.deskViewSection .deskParent .deskImgDiv img {
+    @apply h-full w-full shadow-lg shadow-darkGray;
+}
+
+/* Desks Infos */
+
+.deskViewSection .deskParent .deskInfo {
+    @apply flex flex-col gap-6 justify-start mt-14 md:mt-0 w-full h-full md:h-1/2;
+}
+
+.deskViewSection .deskParent .deskInfo .deskInfoParent {
+    @apply flex justify-between items-center;
+}
+
+.deskViewSection .deskParent .deskInfo .deskInfoParent .DeskTitle {
+    @apply py-1 text-2xl font-bold text-darkBlue uppercase;
+}
+
+.deskViewSection .deskParent .deskInfo .deskInfoParent .bookingLinks {
+    @apply flex items-center gap-2 bg-darkBlue py-1 px-1.5 w-24 rounded-md
+    font-bold cursor-pointer text-offWhite;
+}
+
+.deskViewSection .deskParent .deskInfo .deskLabel .deskInfoSpan {
+    @apply font-bold text-darkBlue;
+}
+
+.deskViewSection .deskParent .deskInfo .deskLabel .deskInfoSpanTitle {
+    @apply  text-base font-medium;
+}
+
+.reservationsSection .deskReservationsTite {
+    @apply text-xl font-bold text-darkBlue;
+}
+
+.reservationsSection .reservationsGrid {
+    @apply grid grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-4 gap-4;
+}
+
+.reservationsSection .reservationsGrid .reservationsGridCard {
+    @apply bg-offWhite py-2 px-2 rounded-md shadow-lg shadow-darkGray;
+}
+
+.reservationsSection .reservationsGrid .reservationsGridCard .gridInfoSpan {
+    @apply font-bold text-darkBlue;
+}
+
+.reservationsSection .reservationsGrid .reservationsGridCard .gridSpanDetails {
+    @apply text-base font-medium;
+}
+
+.reservationsSection .deskNoBookingMess {
+    @apply flex justify-center items-center font-bold text-red pt-6;
+}
+
+/* ----------- End Desk View ------------ */
+
+/* ----------- Footer ------------ */
+
+.footerSection {
+    @apply relative flex flex-wrap items-center justify-between py-2
+    transition-all ease-in shadow-none duration-200 rounded-2xl;
+}
+
+.footerSection .footerMainDiv {
+    @apply text-left py-4 rounded-lg text-darkGray font-bold;
+}
+
+.footerSection .footerMainDiv .copyRight {
+    @apply text-left px-4 bg-offWhite py-4 rounded-lg text-darkGray font-bold;
+}
+
+/* ----------- End Footer ------------ */
